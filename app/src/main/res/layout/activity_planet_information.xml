@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peakpx"
+    android:orientation="vertical"
+    tools:context=".PlanetInformation">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/bg_info" />
+
+    <ImageView
+        android:id="@+id/planet_img"
+        android:layout_width="126dp"
+        android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-50dp"
+        android:elevation="20dp"
+        android:src="@drawable/earth" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+
+        android:layout_marginTop="-55dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:background="@drawable/crop_star"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/planet_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Earth"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/planet_galaxy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Milkyway Galaxy"
+                android:textColor="@color/subtext"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@color/sky_blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_distance" />
+
+                <TextView
+                    android:id="@+id/planet_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="2dp"
+                    android:text="12151"
+                    android:textColor="@color/subtext" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="40dp"
+                    android:src="@drawable/ic_gravity" />
+
+                <TextView
+                    android:id="@+id/planet_gravity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="2dp"
+                    android:text="12151"
+                    android:textColor="@color/subtext" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="22sp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_width="wrap_content"
+        android:text="OVERVIEW"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="start"
+        android:background="@color/sky_blue" />
+
+    <ScrollView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/information"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:textColor="@color/subtext"
+            android:fontFamily="@font/robot_regular"
+            android:layout_width="match_parent"
+            android:text="Earth is the third planet from the Sun and the only astronomical object known to harbor and support life. About 29.2% of Earth's surface is land consisting of continents and islands. The remaining 70.8% is covered with water, mostly by oceans, seas, gulfs, and other salt-water bodies, but also by lakes, rivers, and other freshwater, which together constitute the hydrosphere.\n Much of Earth's polar regions are covered in ice. Earth's outer layer is divided into several rigid tectonic plates that migrate across the surface over many millions of years, while its interior remains active with a solid iron inner core, a liquid outer core that generates Earth's magnetic field, and a convective mantle that drives plate tectonics."
+
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+</LinearLayout>
